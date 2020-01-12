@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SegmentedAdapter</string>
+    <string name="app_basic">Basic</string>
+    <string name="app_segmented">Segmented</string>
+
+    // Dummy data for adapters
+    <string name="dummy_user_name">Gorkem</string>
+    <string name="dummy_user_age">29</string>
+</resources>
