@@ -41,7 +41,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     }
 ```
 
-Note = There is a parameter(isSorted = true) which is in segmented adapter that is sorting headers (ASC)
+Note = There is a parameter(isSorted = true) which is in segmented adapter that is sorting headers (ASC) , Development in progress.
 
 Dependency
 -------------
