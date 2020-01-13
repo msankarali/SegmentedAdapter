@@ -14,8 +14,7 @@ import com.karayel.segmentedadapter.databinding.ItemSectionChildBinding
 import com.karayel.segmentedadapter.databinding.ItemSectionHeaderBinding
 import de.hdodenhof.circleimageview.CircleImageView
 
-class SegmentedAdapter(var context : Context,
-                        var data : List<TeamPlayerModel> = emptyList()) : BaseSegmentedRecyclerAdapter<Team,TeamPlayerModel>(data){
+class SegmentedAdapter(var context : Context) : BaseSegmentedRecyclerAdapter<Team,TeamPlayerModel>(){
 
     override fun onBindHeaderViewHolder(holder: RecyclerView.ViewHolder, obj: Team) {
         (holder as HeaderViewHolder).tvTeamName.text = obj.name
@@ -54,5 +53,4 @@ class SegmentedAdapter(var context : Context,
         val tvPlayerPosition  = itemView.findViewById<AppCompatTextView>(R.id.tv_team_player_position)
         val tvPlayerAvatar = itemView.findViewById<CircleImageView>(R.id.iv_team_avatar)
     }
-
 }

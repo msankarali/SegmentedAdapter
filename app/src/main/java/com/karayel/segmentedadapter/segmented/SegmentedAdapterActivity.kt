@@ -21,7 +21,7 @@ class SegmentedAdapterActivity  : AppCompatActivity(){
             adapter = segmentedAdapter
         }
 
-        segmentedAdapter.setDataSet(getData())
+        segmentedAdapter.setDataSet(getData(),isSorted = false)
     }
 
     private fun getData(): List<TeamPlayerModel> {
