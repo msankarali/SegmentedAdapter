@@ -3,4 +3,5 @@
     <dimen name="btn_width">200dp</dimen>
     <dimen name="iv_size">50dp</dimen>
     <dimen name="app_margin">16dp</dimen>
+    <dimen name="item_header_margin">8dp</dimen>
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text ="@string/dummy_team_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/item_header_margin"
+            android:layout_marginLeft="@dimen/item_header_margin"
+            android:layout_marginTop="@dimen/item_header_margin"
+            android:layout_marginEnd="@dimen/item_header_margin"
+            android:layout_marginRight="@dimen/item_header_margin"
+            android:layout_marginBottom="@dimen/item_header_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

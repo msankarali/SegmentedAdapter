@@ -6,4 +6,10 @@
     // Dummy data for adapters
     <string name="dummy_user_name">Gorkem</string>
     <string name="dummy_user_age">29</string>
+    <string name="dummy_team_name">Fenerbahçe</string>
+    <string name="dummy_team_player_name">Altay Bayındır</string>
+    <string name="dummy_team_player_age">22</string>
+    <string name="dummy_team_player_position">GoalKeeper</string>
+
+
 </resources>

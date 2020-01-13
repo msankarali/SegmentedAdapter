@@ -1,4 +1,4 @@
-package com.karayel.lib.core
+package com.karayel.lib.basic
 
 import android.view.ViewGroup
 import androidx.databinding.ViewDataBinding
