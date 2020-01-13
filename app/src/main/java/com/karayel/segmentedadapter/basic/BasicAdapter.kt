@@ -11,7 +11,8 @@ import com.karayel.segmentedadapter.databinding.ItemBasicBinding
 
 class BasicAdapter(
     private var context: Context,
-    itemList: List<BasicItemModel> = emptyList()
+    itemList: List<BasicItemModel> = emptyList(),
+    private var itemClickListener : BasicAdapterOnItemClickListener
 ) : BaseRecyclerAdapter<BasicItemModel, ItemBasicBinding>() {
 
     init {
@@ -31,6 +32,9 @@ class BasicAdapter(
             binding.tvUserAge.text = it.userAge.toString()
             Glide.with(context).load(it.userAvatarUrl).into(binding.ivUserAvatar)
         }
+        binding.containerBasic.setOnClickListener {
+            itemClickListener.onItemClicked(item?.userName ?: "Vedat Muriqi")
+        }
     }
 
     override fun sendData(items: List<BasicItemModel>, extraData: Any?) {
@@ -38,3 +42,4 @@ class BasicAdapter(
         notifyDataSetChanged()
     }
 }
+

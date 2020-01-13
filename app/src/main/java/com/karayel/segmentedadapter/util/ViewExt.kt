@@ -23,3 +23,5 @@ fun RecyclerView.setup(
     this.setHasFixedSize(true)
     return this
 }
+
+

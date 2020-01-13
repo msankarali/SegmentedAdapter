@@ -3,7 +3,7 @@ package com.karayel.segmentedadapter.segmented
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.karayel.segmentedadapter.R
-import com.karayel.segmentedadapter.util.Players
+import com.karayel.segmentedadapter.util.DummyObjCreator
 import com.karayel.segmentedadapter.util.setup
 import kotlinx.android.synthetic.main.activity_segmented.*
 
@@ -25,6 +25,6 @@ class SegmentedAdapterActivity  : AppCompatActivity(){
     }
 
     private fun getData(): List<TeamPlayerModel> {
-        return Players.getDummyPlayerList()
+        return DummyObjCreator.getDummyPlayerList()
     }
 }

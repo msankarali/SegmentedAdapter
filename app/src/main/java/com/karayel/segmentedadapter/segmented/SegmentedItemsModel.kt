@@ -22,8 +22,11 @@ data class TeamPlayerModel(
 }
 
 // Header
-enum class Team {
-    Fenerbahce, Galatasaray , Trabzonspor , Başakşehir
+enum class Team(val teamAvatarUrl : String) {
+    Fenerbahce("https://i.pinimg.com/originals/47/13/c1/4713c1149ee3fbf08d8d9647ce487b1d.jpg"),
+    Galatasaray("https://i.pinimg.com/originals/a5/2f/5b/a52f5ba052977369a1318aa36f9a9951.png"),
+    Trabzonspor("https://i.pinimg.com/originals/8c/44/ee/8c44ee5a3249d1d4358f2905ad906d47.jpg"),
+    Basaksehir("https://pbs.twimg.com/profile_images/1195216198306271232/Jd3oV3_Q_400x400.jpg")
 }
 
 enum class Position {
